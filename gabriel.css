@@ -1,0 +1,30 @@
+nav{
+    text-align: center;
+}
+footer{
+    font-family: Georgia, serif;
+    text-align: center;
+    font-size: 15px;
+}
+section{
+    border: 1px black solid;
+    margin-top: 20px;
+}
+h1{
+    font-family: Georgia, serif;
+}
+
+.P1,
+.P2,
+.P3,
+.P4{
+    font-size: 20px;
+}
+.Img1{
+    width: 200px;
+    height: 200px;
+}
+.Img2{
+    width: 200px;
+    height: 200px;
+}
