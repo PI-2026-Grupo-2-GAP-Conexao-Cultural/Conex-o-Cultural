@@ -34,7 +34,13 @@ h2 {
 .P3,
 .P4,
 .P5,
-.P6 {
+.P6,
+.P7,
+.P8,
+.P9,
+.P10,
+.P11,
+.P12 {
   font-size: 20px;
   margin: 10px;
   color: #4a4a4a;
@@ -71,7 +77,7 @@ h2 {
   background-color: white;
   margin: 40px;
 }
-.Perspectivas{
+.Perspectivas {
   background-color: white;
   margin: 40px;
 }
@@ -80,8 +86,38 @@ h2 {
 .Trajetoria,
 .Fato-Historico,
 .Momento-Atual,
-.Perspectivas {
+.Perspectivas,
+.origem,
+.crescimento,
+.desenvolvimento,
+.rua-importante,
+.comunidade,
+.bairro-atualmente {
   border-left: 5px solid #d37556;
   border-radius: 0 8px 8px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.origem {
+  background-color: white;
+  margin: 40px;
+}
+.crescimento {
+  background-color: white;
+  margin: 40px;
+}
+.desenvolvimento {
+  background-color: white;
+  margin: 40px;
+}
+.rua-importante {
+  background-color: white;
+  margin: 40px;
+}
+.comunidade {
+  background-color: white;
+  margin: 40px;
+}
+.bairro-atualmente {
+  background-color: white;
+  margin: 40px;
 }
