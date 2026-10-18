@@ -40,7 +40,13 @@ h2 {
 .P9,
 .P10,
 .P11,
-.P12 {
+.P12,
+.P13,
+.P14,
+.P15,
+.P16,
+.P17,
+.P18 {
   font-size: 20px;
   margin: 10px;
   color: #4a4a4a;
@@ -122,7 +128,7 @@ h2 {
   background-color: white;
   margin: 40px;
 }
-.lual{
+.lual {
   background-color: white;
   margin: 40px;
 }
@@ -141,14 +147,24 @@ h2 {
 }
 .Img3,
 .Img4,
-.Img5{
-   width: 300px;
+.Img5 {
+  width: 300px;
   height: 200px;
 }
-figcaption{
-   text-align: left;
+figcaption {
+  text-align: left;
   font-style: italic;
   color: #555;
   font-size: 16px;
   margin-top: 8px;
+}
+.Titulo3-Lual,
+.Titulo3-S-imigrante,
+.Titulo3-Bon-odori {
+  color: #b85f43;
+  text-align: left;
+}
+a {
+  text-align: center;
+  font-size: 19px;
 }
