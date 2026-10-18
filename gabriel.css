@@ -92,7 +92,8 @@ h2 {
 .desenvolvimento,
 .rua-importante,
 .comunidade,
-.bairro-atualmente {
+.bairro-atualmente,
+.lual {
   border-left: 5px solid #d37556;
   border-radius: 0 8px 8px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -120,4 +121,34 @@ h2 {
 .bairro-atualmente {
   background-color: white;
   margin: 40px;
+}
+.lual{
+  background-color: white;
+  margin: 40px;
+}
+.semana-imigrante {
+  background-color: white;
+  margin: 40px;
+}
+.bon-odori {
+  background-color: white;
+  margin: 40px;
+}
+.FigureLual,
+.FigureS-imigrante,
+.FigureBon-odori {
+  float: right;
+}
+.Img3,
+.Img4,
+.Img5{
+   width: 300px;
+  height: 200px;
+}
+figcaption{
+   text-align: left;
+  font-style: italic;
+  color: #555;
+  font-size: 16px;
+  margin-top: 8px;
 }
