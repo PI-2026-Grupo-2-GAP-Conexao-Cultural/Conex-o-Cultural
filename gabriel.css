@@ -121,3 +121,7 @@ h2 {
   background-color: white;
   margin: 40px;
 }
+iframe{
+  display: block;
+  margin: 0 auto;
+}
