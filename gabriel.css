@@ -173,24 +173,32 @@ html[data-tema="escuro"] body {
   color: var(--cor-texto);
 }
 
-html[data-tema="escuro"] header {
-  background-color: var(--cor-topo);
-}
-
-html[data-tema="escuro"] main > h1 {
-  color: var(--cor-titulo);
-  border-bottom-color: var(--cor-borda);
-}
-
-html[data-tema="escuro"] section {
+html[data-tema="escuro"] nav {
   background-color: var(--cor-card);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  border-color: var(--cor-borda);
 }
 
+html[data-tema="escuro"] a {
+  color: var(--cor-destaque);
+}
+
+html[data-tema="escuro"] h1,
 html[data-tema="escuro"] h2 {
   color: var(--cor-titulo);
 }
 
-html[data-tema="escuro"] footer {
+html[data-tema="escuro"] h3 {
+  color: var(--cor-destaque);
+}
+
+html[data-tema="escuro"] main section {
+  background-color: var(--cor-card);
+}
+
+html[data-tema="escuro"] section p {
+  color: var(--cor-texto);
+}
+
+html[data-tema="escuro"] figcaption {
   color: var(--cor-texto-suave);
 }
