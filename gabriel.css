@@ -168,3 +168,29 @@ a {
   text-align: center;
   font-size: 19px;
 }
+html[data-tema="escuro"] body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+html[data-tema="escuro"] header {
+  background-color: var(--cor-topo);
+}
+
+html[data-tema="escuro"] main > h1 {
+  color: var(--cor-titulo);
+  border-bottom-color: var(--cor-borda);
+}
+
+html[data-tema="escuro"] section {
+  background-color: var(--cor-card);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+html[data-tema="escuro"] h2 {
+  color: var(--cor-titulo);
+}
+
+html[data-tema="escuro"] footer {
+  color: var(--cor-texto-suave);
+}
