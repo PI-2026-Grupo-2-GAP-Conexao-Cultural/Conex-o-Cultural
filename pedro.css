@@ -198,3 +198,39 @@ footer p {
         font-size: 1.3rem;
     }
 }
+html[data-tema="escuro"] body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+html[data-tema="escuro"] header,
+html[data-tema="escuro"] footer {
+  background-color: var(--cor-topo);
+}
+
+html[data-tema="escuro"] main > h1 {
+  color: var(--cor-titulo);
+  border-bottom-color: var(--cor-borda);
+}
+
+html[data-tema="escuro"] section {
+  background-color: var(--cor-card);
+  border-color: var(--cor-borda);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+html[data-tema="escuro"] section:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55);
+}
+
+html[data-tema="escuro"] h2 {
+  color: var(--cor-titulo);
+}
+
+html[data-tema="escuro"] h2::after {
+  background-color: var(--cor-destaque);
+}
+
+html[data-tema="escuro"] section p {
+  color: var(--cor-texto-suave);
+}
