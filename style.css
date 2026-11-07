@@ -195,7 +195,6 @@ background-color: white;
   text-align: justify;
   margin: 5px;
 }
-
 .Video-Multiculturalismo {
   float: right;
   width: 532px;
@@ -204,10 +203,48 @@ background-color: white;
   border: 1px black solid;
   background-color: white;
 }
-
 .Video-Multiculturalismo iframe {
   width: 100%;
   height: 100%;
   border: none;
 }
+html[data-tema="escuro"] body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+html[data-tema="escuro"] .Titulo1-1,
+html[data-tema="escuro"] .Titulo1-2,
+html[data-tema="escuro"] .Titulo1-3 {
+  color: var(--cor-destaque);
+}
+html[data-tema="escuro"] [class^="Titulo2-"],
+html[data-tema="escuro"] [class^="Titulo-Multi"],
+html[data-tema="escuro"] .Titulo-Pedro,
+html[data-tema="escuro"] .Titulo-Andre,
+html[data-tema="escuro"] .Titulo-Gabriel {
+  color: var(--cor-titulo);
+}
+html[data-tema="escuro"] .Div-Municipio,
+html[data-tema="escuro"] .Div-Multiculturalismo {
+  background-color: var(--cor-card);
+  border-color: var(--cor-borda);
+}
+html[data-tema="escuro"] .Div-Pedro,
+html[data-tema="escuro"] .Div-Andre,
+html[data-tema="escuro"] .Div-Gabriel {
+  background-color: var(--cor-card);
+}
 
+html[data-tema="escuro"] .FigC-1,
+html[data-tema="escuro"] .FigC-2 {
+  color: var(--cor-texto-suave);
+}
+
+html[data-tema="escuro"] .A1 {
+  color: var(--cor-destaque);
+}
+
+html[data-tema="escuro"] .Video-Multiculturalismo {
+  background-color: var(--cor-card);
+  border-color: var(--cor-borda);
+}
