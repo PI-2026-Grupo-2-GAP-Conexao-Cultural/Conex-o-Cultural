@@ -80,3 +80,21 @@ body {
     display: none;
   }
 }
+
+.botao-apoio {
+  display: block;
+  width: fit-content;
+  margin: 10px auto 20px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1px solid var(--cor-borda);
+  background-color: var(--cor-card);
+  color: var(--cor-texto);
+  font: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.botao-apoio:hover {
+  border-color: var(--cor-destaque);
+}
