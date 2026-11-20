@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --andre-fundo: #e9edf3;
+  --andre-card: #fafcff;
+  --andre-borda: #c5d1df;
+  --andre-destaque: #87a7c9;
+  --andre-destaque-escuro: #5f7f9f;
+  --andre-titulo: #4f6f8e;
+  --andre-texto: #52606d;
+  --andre-suave: #eff4f8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+header h1,
+main > h1,
+h2,
+h3,
+p,
+a,
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--andre-fundo);
+  color: var(--andre-texto);
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #fafcff;
+  border-bottom: 1px solid var(--andre-borda);
+  padding: 22px 16px 18px;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--andre-titulo);
+  font-size: 2rem;
+  margin: 0 0 14px;
+}
+
+nav {
+  width: min(1100px, 100%);
+  min-height: 48px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 7px;
+  background-color: var(--andre-card);
+  border: 1px solid var(--andre-borda);
+  border-radius: 12px;
+}
+
+nav a {
+  color: var(--andre-destaque-escuro);
+  text-decoration: none;
+  background-color: var(--andre-suave);
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 0.92rem;
+  transition: 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background-color: var(--andre-destaque);
+  color: #fff;
+  outline: none;
+}
+
+main {
+  max-width: 1100px;
+  margin: 34px auto;
+  padding: 0 20px;
+}
+
+main > h1 {
+  color: var(--andre-titulo);
+  text-align: center;
+  font-size: 1.75rem;
+  border-bottom: 1px solid var(--andre-borda);
+  padding: 8px 0 16px;
+  margin: 54px 0 24px;
+}
+
+section {
+  background-color: var(--andre-card);
+  margin: 0 0 24px;
+  padding: 26px 28px;
+  border: 1px solid var(--andre-borda);
+  border-left: 5px solid var(--andre-destaque);
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 7px 22px rgba(79, 111, 142, 0.08);
+  scroll-margin-top: 20px;
+  overflow: hidden;
+}
+
+h2 {
+  color: var(--andre-titulo);
+  font-size: 1.42rem;
+  margin: 0 0 12px;
+}
+
+h3 {
+  color: var(--andre-destaque-escuro);
+}
+
+p {
+  color: var(--andre-texto);
+  font-size: 1.02rem;
+  margin: 0;
+  text-align: left;
+}
+
+figure {
+  width: 300px;
+  max-width: 38%;
+  float: right;
+  margin: 4px 0 10px 24px;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--andre-borda);
+}
+
+figcaption {
+  color: var(--andre-texto);
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.espaco-imagem {
+  width: 300px;
+  max-width: 38%;
+  min-height: 190px;
+  float: right;
+  margin: 4px 0 10px 24px;
+  display: grid;
+  place-items: center;
+  color: var(--andre-destaque-escuro);
+  background: var(--andre-suave);
+  border: 1px dashed var(--andre-destaque);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 22px 16px;
+  background-color: #fafcff;
+  border-top: 1px solid var(--andre-borda);
+  color: var(--andre-titulo);
+  text-align: center;
+}
+
+footer p {
+  color: inherit;
+  text-align: center;
+}
+
+.botao-tema {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 20;
+}
+
+iframe {
+  display: block;
+  max-width: calc(100% - 28px);
+  margin: 24px auto;
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 1.55rem;
+  }
+
+  nav {
+    gap: 6px;
+  }
+
+  nav a {
+    font-size: 0.82rem;
+  }
+
+  main {
+    margin: 24px auto;
+    padding: 0 14px;
+  }
+
+  section {
+    padding: 21px 18px;
+  }
+
+  figure,
+  .espaco-imagem {
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 16px;
+  }
+
+  figure img {
+    height: 220px;
+  }
+}
+
+html[data-tema="escuro"] body,
+html[data-tema="escuro"] header,
+html[data-tema="escuro"] footer,
+html[data-tema="escuro"] nav,
+html[data-tema="escuro"] section {
+  background-color: var(--cor-card);
+  border-color: var(--cor-borda);
+  color: var(--cor-texto);
+}
+
+html[data-tema="escuro"] nav a {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: var(--cor-texto);
+}
+
+html[data-tema="escuro"] h1,
+html[data-tema="escuro"] h2,
+html[data-tema="escuro"] h3,
+html[data-tema="escuro"] p,
+html[data-tema="escuro"] figcaption,
+html[data-tema="escuro"] footer {
+  color: var(--cor-texto);
+}
+
+html[data-tema="escuro"] .espaco-imagem {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--cor-texto-suave);
+  border-color: var(--cor-borda);
+}

@@ -1,0 +1,71 @@
+:root {
+  --cor-fundo: #17191d;
+  --cor-topo: #20242a;
+  --cor-card: #272b32;
+  --cor-borda: #3b414a;
+  --cor-titulo: #e8edf4;
+  --cor-texto: #dde2e8;
+  --cor-texto-suave: #bcc4ce;
+  --cor-destaque: #8ba7c3;
+}
+
+.botao-tema {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 8px 11px;
+  border: 1px solid var(--cor-borda, #c9cfd6);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #3f4a55;
+  font: inherit;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.botao-tema .rotulo {
+  font-size: 0.86rem;
+}
+
+.botao-tema .chave {
+  width: 34px;
+  height: 20px;
+  border-radius: 20px;
+  background: #d8dde3;
+  position: relative;
+}
+
+.botao-tema .chave::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 3px;
+  top: 3px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+  transition: transform 0.2s ease;
+}
+
+html[data-tema="escuro"] .botao-tema {
+  background: #30353d;
+  color: #eef2f6;
+  border-color: var(--cor-borda);
+}
+
+html[data-tema="escuro"] .botao-tema .chave {
+  background: #7f9db8;
+}
+
+html[data-tema="escuro"] .botao-tema .chave::after {
+  transform: translateX(14px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
