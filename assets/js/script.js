@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function aplicarTema(tema) {
     const escuro = tema === "escuro";
+    const emIngles = document.documentElement.lang.toLowerCase().startsWith("en");
     document.documentElement.setAttribute("data-tema", tema);
     botao.setAttribute("aria-checked", String(escuro));
 
@@ -15,8 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const rotulo = botao.querySelector(".rotulo");
 
     if (icone) icone.textContent = escuro ? "☀️" : "🌙";
-    if (rotulo) rotulo.textContent = escuro ? "Modo claro" : "Modo escuro";
-    botao.setAttribute("aria-label", escuro ? "Light mode" : "Dark mode");
+    if (rotulo) {
+      rotulo.textContent = escuro
+        ? (emIngles ? "Light mode" : "Modo claro")
+        : (emIngles ? "Dark mode" : "Modo escuro");
+    }
+    botao.setAttribute("aria-label", escuro
+      ? (emIngles ? "Light mode" : "Ativar modo claro")
+      : (emIngles ? "Dark mode" : "Ativar modo escuro"));
   }
 
   aplicarTema(temaInicial);

@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro</title>
-    <link rel="stylesheet" href="tema.css">
-    <link rel="stylesheet" href="pedro.css">
-    <script src="script.js"></script>
+    <title>About Pedro</title>
+    <link rel="stylesheet" href="../assets/css/pedro.css">
+    <link rel="stylesheet" href="../assets/css/tema.css">
+    <script src="../assets/js/script.js"></script>
 </head>
+
 <body>
     <button id="botao-tema" class="botao-tema" type="button" role="switch" aria-checked="false" aria-label="Dark mode">
         <span class="icone" aria-hidden="true">🌙</span>
@@ -18,17 +19,26 @@
     <header>
         <h1>About Pedro</h1>
         <nav>
-            <a href="index.html">← Back</a>
+            <a href="../index.html">← Back</a>
             <a href="#nascimento">Birth</a>
             <a href="#trajetoria">School Journey</a>
             <a href="#fato-historico">Historical Fact</a>
             <a href="#momento-atual">Current Moment</a>
             <a href="#perspectivas">Outlook for the Future</a>
-            <a href="pedro.html" hreflang="pt-BR">Português</a>
+            <a href="../pedro.html" hreflang="pt-BR">Português</a>
         </nav>
     </header>
 
     <main>
+        <section class="secao-video-pedro" aria-labelledby="titulo-video-pedro">
+            <h2 id="titulo-video-pedro">About me — video</h2>
+            <div class="video-pedro">
+                <iframe src="https://www.youtube.com/embed/4vji3JUEg84?si=MkEjZrKI0Zw0Nra8"
+                    title="Video about the Cultural Connection project"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
 
         <section id="nascimento">
             <h2>Birth</h2>
@@ -244,5 +254,6 @@
         <p>Integrative Project - Cultural Connection</p>
     </footer>
 </body>
+
 </html>
 
