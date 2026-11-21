@@ -157,11 +157,18 @@ footer p {
 }
 
 .secao-video-pedro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .secao-video-pedro h2 {
-  margin-bottom: 18px;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 18px;
 }
 
 .video-pedro {
