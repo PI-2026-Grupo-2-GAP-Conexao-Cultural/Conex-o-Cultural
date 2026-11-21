@@ -172,8 +172,9 @@ footer p {
 }
 
 .video-pedro {
-  width: min(560px, 100%);
-  aspect-ratio: 16 / 9;
+  width: 560px;
+  height: 315px;
+  max-width: 100%;
   margin: 0 auto;
   border: 1px solid var(--perfil-borda);
   border-radius: 12px;
@@ -186,6 +187,14 @@ footer p {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+@media (max-width: 620px) {
+  .video-pedro {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
 }
 
 @media (max-width: 700px) {
